@@ -5,34 +5,25 @@ jobs:
   unzip:
     runs-on: ubuntu-latest
     steps:
-      # Schritt 1: Repository auschecken
       - uses: actions/checkout@v4
 
-      # Schritt 2: Alle ZIP-Dateien finden & entpacken
-      - name: Find and unzip all ZIP files
+      - name: Find and unzip ZIP files
         run: |
-          # Erstelle einen Ordner für entpackte Dateien
-          mkdir -p unzipped_files  
-
-          # Suche alle ZIP-Dateien im Root-Verzeichnis und entpacke sie
+          mkdir -p unzipped_files
           for zip_file in *.zip; do
             if [ -f "$zip_file" ]; then
               echo "➡ Entpacke $zip_file..."
               unzip "$zip_file" -d "unzipped_files/${zip_file%.zip}"
-              rm "$zip_file"  # Lösche die ZIP-Datei (optional)
+              rm "$zip_file"
             fi
           done
 
-          # Falls keine ZIP gefunden wurde
-          if [ ! -f *.zip ]; then
-            echo "ℹ Keine ZIP-Datei gefunden."
-          fi
-
-      # Schritt 3: Änderungen committen & pushen
-      - name: Commit and push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
-          commit_message: "Automatisch ZIP-Datei(en) entpackt"
-          force: true  # Überschreibt ggf. vorhandene Dateien
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Automatisch ZIP-Datei entpackt" || echo "Keine Änderungen"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
