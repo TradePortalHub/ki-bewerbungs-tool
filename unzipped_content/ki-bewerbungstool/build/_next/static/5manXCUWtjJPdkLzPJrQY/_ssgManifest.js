@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fapply\u002F[jobId]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
