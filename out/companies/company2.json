@@ -1,0 +1,45 @@
+{
+  "companyName": "HealthPlus AG",
+  "companyDescription": "Gesundheitsdienstleister für digitale Telemedizin.",
+  "companyLogo": "https://example.com/logos/healthplus.png",
+  "companyAddress": "Gesundheitsweg 10, 80331 München, Deutschland",
+  "companyContactPerson": "Dr. Max Becker",
+  "companyWebsite": "https://healthplus.de",
+  "companyContactDetails": "info@healthplus.de, +49 89 7654321",
+  "postings": [
+    {
+      "id": "healthplus-1",
+      "title": "Backend‑Entwickler Node.js (m/w/d)",
+      "description": "Entwicklung skalierbarer API‑Dienste für Telemedizin‑Plattform.",
+      "announcement": "Gestalte unsere digitale Gesundheitsinfrastruktur!",
+      "questions": [
+        "Erkläre deine Erfahrung mit Express oder Fastify.",
+        "Wie sicherst du APIs ab?"
+      ],
+      "fileUploads": [
+        { "name": "lebenslauf", "label": "Lebenslauf (PDF)", "required": true }
+      ],
+      "informationRequested": [
+        "Referenzen",
+        "Cloud‑Erfahrung (AWS/Azure)"
+      ]
+    },
+    {
+      "id": "healthplus-2",
+      "title": "UI/UX‑Designer (m/w/d)",
+      "description": "Konzeption und Design patientenfreundlicher Interfaces.",
+      "announcement": "Verbessere die User‑Experience in der Telemedizin!",
+      "questions": [
+        "Zeige uns dein Portfolio.",
+        "Welche Tools nutzt du (Figma, Sketch)?"
+      ],
+      "fileUploads": [
+        { "name": "portfolio", "label": "Portfolio (PDF/Link)", "required": true }
+      ],
+      "informationRequested": [
+        "Projektbeschreibungen",
+        "Design‑System"
+      ]
+    }
+  ]
+}
