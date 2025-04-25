@@ -2,34 +2,41 @@ name: Unzip Files to Root
 on: [push, workflow_dispatch]
 
 permissions:
-  contents: write  # Schreibberechtigungen explizit setzen
+  contents: write
 
 jobs:
   unzip_to_root:
     runs-on: ubuntu-latest
     steps:
+      # 1. Repository korrekt auschecken (mit voller Tiefe)
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Für vollständige Git-Historie
+          fetch-depth: 0  # Wichtig für volle Git-Historie
+          persist-credentials: true  # Für Push-Berechtigungen
 
-      - name: Unzip directly to root
+      # 2. ZIP-Datei entpacken
+      - name: Unzip to root directory
         run: |
-          # Lösche vorhandene ZIP-Datei (falls sie schon im Repository war)
+          # ZIP-Datei löschen (falls bereits im Repository)
           git rm -f *.zip || true
           
-          # Entpacke alle ZIP-Dateien direkt ins Root-Verzeichnis
-          find . -name "*.zip" -exec unzip -o {} \; -exec rm {} \;
+          # ZIP-Datei direkt ins Root entpacken
+          unzip -o '*.zip' -x '__MACOSX/*' '.DS_Store'
           
-          # Bereinige macOS-Metadaten und Git-Reste
-          find . -name '__MACOSX' -exec rm -rf {} +
+          # ZIP-Datei nach dem Entpacken löschen
+          rm -f *.zip
+          
+          # macOS-Metadaten bereinigen
+          rm -rf __MACOSX || true
           find . -name '.DS_Store' -delete
-          find . -name '.git' -type d -exec rm -rf {} +
 
-      - name: Commit and Push Changes
+      # 3. Änderungen committen
+      - name: Commit and Push
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add .
+          git status
           git commit -m "ZIP-Datei direkt ins Root entpackt" || echo "Keine Änderungen"
           git push
