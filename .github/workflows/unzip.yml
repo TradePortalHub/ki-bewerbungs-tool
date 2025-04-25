@@ -1,42 +1,35 @@
-name: Unzip and Process Files
+name: Unzip Files to Root
 on: [push, workflow_dispatch]
 
 permissions:
-  contents: write  # Explizite Schreibberechtigung setzen
+  contents: write  # Schreibberechtigungen explizit setzen
 
 jobs:
-  process_zip:
+  unzip_to_root:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Für bessere Git-Historie
+          fetch-depth: 0  # Für vollständige Git-Historie
 
-      - name: Unzip Files
+      - name: Unzip directly to root
         run: |
-          # Erstelle Zielordner
-          mkdir -p unzipped_content
+          # Lösche vorhandene ZIP-Datei (falls sie schon im Repository war)
+          git rm -f *.zip || true
           
-          # Entpacke alle ZIPs und ignoriere macOS/Metadaten
-          find . -name "*.zip" -exec unzip -o {} -d unzipped_content \; -exec rm {} \;
+          # Entpacke alle ZIP-Dateien direkt ins Root-Verzeichnis
+          find . -name "*.zip" -exec unzip -o {} \; -exec rm {} \;
           
-          # Bereinige unerwünschte Dateien
-          find unzipped_content -name '.DS_Store' -delete
-          find unzipped_content -name '__MACOSX' -exec rm -rf {} +
-          find unzipped_content -name '.git' -exec rm -rf {} +
+          # Bereinige macOS-Metadaten und Git-Reste
+          find . -name '__MACOSX' -exec rm -rf {} +
+          find . -name '.DS_Store' -delete
+          find . -name '.git' -type d -exec rm -rf {} +
 
-      - name: Commit Changes
+      - name: Commit and Push Changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
-          # Nur relevante Dateien hinzufügen
-          git add unzipped_content/
-          git rm *.zip || true
-          
-          git commit -m "Automatisch verarbeitet: ZIP entpackt und bereinigt" || echo "Keine Änderungen"
-          
-          # Authentifizierung mit Token
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push origin HEAD:main
+          git add .
+          git commit -m "ZIP-Datei direkt ins Root entpackt" || echo "Keine Änderungen"
+          git push
