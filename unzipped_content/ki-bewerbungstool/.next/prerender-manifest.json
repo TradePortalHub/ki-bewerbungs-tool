@@ -1,0 +1,287 @@
+{
+  "version": 4,
+  "routes": {
+    "/apply/technova-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/technova-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/technova-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/technova-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/travelx-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/travelx-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/travelx-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/travelx-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/healthplus-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/healthplus-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/healthplus-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/healthplus-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/marketmax-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/marketmax-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/marketmax-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/marketmax-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/greenenergy-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/greenenergy-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/greenenergy-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/greenenergy-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/edusmart-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/edusmart-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/edusmart-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/edusmart-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/fincore-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/fincore-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/fincore-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/fincore-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/medilife-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/medilife-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/medilife-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/medilife-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/autodrive-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/autodrive-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/autodrive-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/autodrive-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/foodfusion-1": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/foodfusion-1.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/apply/foodfusion-2": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/apply/[jobId]",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/foodfusion-2.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
+  "dynamicRoutes": {
+    "/apply/[jobId]": {
+      "routeRegex": "^/apply/([^/]+?)(?:/)?$",
+      "dataRoute": "/_next/data/5manXCUWtjJPdkLzPJrQY/apply/[jobId].json",
+      "fallback": false,
+      "dataRouteRegex": "^/_next/data/5manXCUWtjJPdkLzPJrQY/apply/([^/]+?)\\.json$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "4413692015dbd7d9d32267ddaa6f9d2c",
+    "previewModeSigningKey": "a65c37551544ada91ee9d84ccc032f480f90d3004128c4a408106cfe84f63857",
+    "previewModeEncryptionKey": "aebdf77d84529d29c5232148c3f26c2e88645ec58e20511c895bba43131f03d6"
+  }
+}

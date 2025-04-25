@@ -1,0 +1,24 @@
+{
+    "name": "ki-bewerbungs-tool",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "export": "next export",
+        "start": "next start"
+    },
+    "dependencies": {
+        "formidable": "^3.5.1",
+        "next": "latest",
+        "openai": "^4.5.0",
+        "react": "latest",
+        "react-dom": "latest"
+    },
+    "devDependencies": {
+        "@heroicons/react": "^2.2.0",
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.1.4"
+    }
+}

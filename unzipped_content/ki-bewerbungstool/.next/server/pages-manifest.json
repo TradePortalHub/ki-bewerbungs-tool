@@ -1,0 +1,15 @@
+{
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/api/chat": "pages/api/chat.js",
+  "/_app": "pages/_app.js",
+  "/admin": "pages/admin.html",
+  "/api/config": "pages/api/config.js",
+  "/api/jobs": "pages/api/jobs.js",
+  "/api/companies": "pages/api/companies.js",
+  "/apply": "pages/apply.html",
+  "/": "pages/index.html",
+  "/api/applications": "pages/api/applications.js",
+  "/apply/[jobId]": "pages/apply/[jobId].js",
+  "/404": "pages/404.html"
+}

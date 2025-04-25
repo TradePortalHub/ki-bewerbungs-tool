@@ -1,0 +1,45 @@
+{
+  "companyName": "GreenEnergy Solutions",
+  "companyDescription": "Entwicklung nachhaltiger Energiesysteme.",
+  "companyLogo": "https://example.com/logos/greenenergy.png",
+  "companyAddress": "Solarallee 3, 10557 Berlin, Deutschland",
+  "companyContactPerson": "Thomas Bauer",
+  "companyWebsite": "https://greenenergy.de",
+  "companyContactDetails": "info@greenenergy.de, +49 30 9876543",
+  "postings": [
+    {
+      "id": "greenenergy-1",
+      "title": "Elektroingenieur (m/w/d)",
+      "description": "Planung von Photovoltaik‑Anlagen.",
+      "announcement": "Werde Teil der grünen Revolution!",
+      "questions": [
+        "Erkläre deine PV‑Projekterfahrung.",
+        "Kennst du Normen (IEC, VDE)?"
+      ],
+      "fileUploads": [
+        { "name": "lebenslauf", "label": "Lebenslauf (PDF)", "required": true }
+      ],
+      "informationRequested": [
+        "Zertifikate",
+        "Referenzprojekte"
+      ]
+    },
+    {
+      "id": "greenenergy-2",
+      "title": "Projektmanager (m/w/d)",
+      "description": "Koordination von Energie‑Projekten.",
+      "announcement": "Manage unsere Solarprojekte!",
+      "questions": [
+        "Welche PM‑Tools nutzt du?",
+        "Erzähle von deinem größten Projekt."
+      ],
+      "fileUploads": [
+        { "name": "lebenslauf", "label": "Lebenslauf (PDF)", "required": true }
+      ],
+      "informationRequested": [
+        "Projektpläne",
+        "Teamgröße"
+      ]
+    }
+  ]
+}
