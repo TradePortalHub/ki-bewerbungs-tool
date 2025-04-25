@@ -1,0 +1,55 @@
+/* FILE: styles/globals.css*/
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
+
+.kibt-job-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.kibt-job-list {
+    list-style: none;
+    padding: 0;
+}
+
+.kibt-job-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.kibt-job-list li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.kibt-job-list li a:hover {
+    text-decoration: underline;
+}
+
+.kibt-job-list li p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.kibt-job-list li:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+  }
+  
+  .kibt-job-list a {
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+  }
+  
+  .kibt-job-list a:hover {
+    color: #1e3a8a;
+    text-decoration: underline;
+  }
