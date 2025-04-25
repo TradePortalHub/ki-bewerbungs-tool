@@ -8,35 +8,29 @@ jobs:
   unzip_to_root:
     runs-on: ubuntu-latest
     steps:
-      # 1. Repository korrekt auschecken (mit voller Tiefe)
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Wichtig für volle Git-Historie
-          persist-credentials: true  # Für Push-Berechtigungen
+          fetch-depth: 0
+          persist-credentials: true
 
-      # 2. ZIP-Datei entpacken
       - name: Unzip to root directory
         run: |
-          # ZIP-Datei löschen (falls bereits im Repository)
-          git rm -f *.zip || true
-          
-          # ZIP-Datei direkt ins Root entpacken
+          # 1. Erst entpacken
           unzip -o '*.zip' -x '__MACOSX/*' '.DS_Store'
           
-          # ZIP-Datei nach dem Entpacken löschen
-          rm -f *.zip
-          
-          # macOS-Metadaten bereinigen
+          # 2. Dann bereinigen
           rm -rf __MACOSX || true
           find . -name '.DS_Store' -delete
+          
+          # 3. ZIP-Datei erst NACH dem Entpacken löschen
+          git rm -f *.zip || true
+          rm -f *.zip
 
-      # 3. Änderungen committen
       - name: Commit and Push
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add .
-          git status
-          git commit -m "ZIP-Datei direkt ins Root entpackt" || echo "Keine Änderungen"
+          git commit -m "ZIP-Datei entpackt und bereinigt" || echo "Keine Änderungen"
           git push
